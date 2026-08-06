@@ -42,6 +42,31 @@ GraceVerseDocs/
 - **Privacy policy:** edit `privacy-policy.md`, then mirror changes in `privacy-policy.html`
 - **App icon:** replace `assets/icon.png` (from `apps/mobile/assets/icon.png` in the main repo)
 
+## Refreshing app screenshots
+
+Phone mockups on the landing page use real captures from a connected Android device.
+
+1. Connect one Android device with USB debugging enabled and open GraceVerse on the screen you want.
+2. From this repo root, run:
+
+```bash
+chmod +x scripts/capture-screenshot.sh   # first time only
+./scripts/capture-screenshot.sh today.png
+```
+
+3. Current captures under `assets/screenshots/`:
+
+| File | Screen |
+|------|--------|
+| `today.png` | Today tab — daily verse |
+| `mood.png` | Mood picker |
+| `mood-result.png` | Mood match with verse result |
+| `bible-home.png` | Bible tab home |
+| `bible-books.png` | OT/NT books list |
+| `bible-reader.png` | Chapter reader with focus verse |
+
+Screenshots are full-device PNGs (1080×2340). The site scales them inside CSS phone frames.
+
 ## Google Play Console
 
 | Field | Value |

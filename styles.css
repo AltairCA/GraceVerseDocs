@@ -332,6 +332,43 @@ section {
   gap: 1.25rem;
 }
 
+.features-detail {
+  display: grid;
+  gap: 3rem;
+}
+
+.feature-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.feature-row.reverse {
+  direction: rtl;
+}
+
+.feature-row.reverse > * {
+  direction: ltr;
+}
+
+.feature-copy h3 {
+  font-family: var(--font);
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+}
+
+.feature-copy p {
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.feature-phone .phone {
+  width: 220px;
+  margin: 0 auto;
+}
+
 .feature-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -593,8 +630,13 @@ section {
 @media (max-width: 900px) {
   .hero-grid,
   .features-grid,
+  .feature-row,
   .steps {
     grid-template-columns: 1fr;
+  }
+
+  .feature-row.reverse {
+    direction: ltr;
   }
 
   .hero-copy .lead {

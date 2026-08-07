@@ -238,55 +238,21 @@ img {
 .phone {
   width: 260px;
   background: #081018;
-  border-radius: 36px;
+  border-radius: 40px;
   padding: 10px;
   box-shadow: var(--shadow-lg), 0 0 0 1px rgba(243, 239, 230, 0.08) inset;
 }
 
-.phone-notch {
-  width: 90px;
-  height: 22px;
-  background: #081018;
-  border-radius: 0 0 14px 14px;
-  margin: 0 auto -12px;
-  position: relative;
-  z-index: 2;
-}
-
+/* Full-bleed screenshot well — matches iPhone 17 capture ratio (1206×2622) */
 .phone-screen {
-  background: linear-gradient(180deg, #12202c, #0e1a24);
-  border-radius: 28px;
+  position: relative;
+  background: #0e1a24;
+  border-radius: 30px;
   overflow: hidden;
-  aspect-ratio: 1080 / 2340;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem 1.25rem;
-  text-align: center;
-}
-
-.phone-screen .eyebrow {
-  color: var(--accent);
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.phone-screen .verse {
-  font-family: var(--font);
-  font-style: italic;
-  font-size: 1.05rem;
-  line-height: 1.45;
-  color: var(--text);
-  margin: 0 0 1rem;
-}
-
-.phone-screen .ref {
-  color: var(--teal);
-  font-size: 0.85rem;
-  font-weight: 600;
+  aspect-ratio: 1206 / 2622;
+  display: block;
+  padding: 0;
+  line-height: 0;
 }
 
 .phone-screenshot {

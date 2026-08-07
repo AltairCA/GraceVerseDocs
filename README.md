@@ -42,19 +42,30 @@ GraceVerseDocs/
 - **Privacy policy:** edit `privacy-policy.md`, then mirror changes in `privacy-policy.html`
 - **App icon:** replace `assets/icon.png` (from `apps/mobile/assets/icon.png` in the main repo)
 
-## Refreshing app screenshots
+## Screenshots
 
-Phone mockups on the landing page use real captures from a connected Android device.
+| Folder | Device |
+|--------|--------|
+| `assets/screenshots/` | Android (OnePlus) |
+| `assets/screenshots/ios/` | iOS Simulator (iPhone 17) |
 
-1. Connect one Android device with USB debugging enabled and open GraceVerse on the screen you want.
-2. From this repo root, run:
+Landing page phone frames use the **iOS** captures. Android files remain for Play Console upload.
+
+### iOS captures
+
+| File | Screen |
+|------|--------|
+| `ios/today.png` | Today tab — daily verse |
+| `ios/mood.png` | Mood picker |
+| `ios/mood-result.png` | Mood match with verse |
+| `ios/bible-home.png` | Bible tab home |
+| `ios/bible-reader.png` | Chapter reader |
 
 ```bash
-chmod +x scripts/capture-screenshot.sh   # first time only
-./scripts/capture-screenshot.sh today.png
+xcrun simctl io booted screenshot assets/screenshots/ios/today.png
 ```
 
-3. Current captures under `assets/screenshots/`:
+### Android captures
 
 | File | Screen |
 |------|--------|
@@ -65,7 +76,11 @@ chmod +x scripts/capture-screenshot.sh   # first time only
 | `bible-books.png` | OT/NT books list |
 | `bible-reader.png` | Chapter reader with focus verse |
 
-Screenshots are full-device PNGs (1080×2340). The site scales them inside CSS phone frames.
+```bash
+./scripts/capture-screenshot.sh today.png
+```
+
+Screenshots are full-device PNGs. The site scales them inside CSS phone frames.
 
 ## Google Play Console
 

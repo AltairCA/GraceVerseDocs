@@ -47,7 +47,7 @@ GraceVerseDocs/
 | Folder | Device |
 |--------|--------|
 | `assets/screenshots/` | Android (OnePlus) |
-| `assets/screenshots/ios/` | iOS Simulator (iPhone 17) |
+| `assets/screenshots/ios/` | iOS Simulator (iPhone 17 Pro Max, 6.9") |
 
 Landing page phone frames use the **iOS** captures. Android files remain for Play Console upload.
 
@@ -57,9 +57,8 @@ Landing page phone frames use the **iOS** captures. Android files remain for Pla
 |------|--------|
 | `ios/today.png` | Today tab — daily verse |
 | `ios/mood.png` | Mood picker |
-| `ios/mood-result.png` | Mood match with verse |
-| `ios/bible-home.png` | Bible tab home |
 | `ios/bible-reader.png` | Chapter reader |
+| `ios/bible-books.png` | Bible books list |
 
 ```bash
 xcrun simctl io booted screenshot assets/screenshots/ios/today.png

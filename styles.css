@@ -243,13 +243,13 @@ img {
   box-shadow: var(--shadow-lg), 0 0 0 1px rgba(243, 239, 230, 0.08) inset;
 }
 
-/* Full-bleed screenshot well — matches iPhone 17 capture ratio (1206×2622) */
+/* Full-bleed screenshot well — matches iPhone 17 Pro Max capture ratio (1320×2868) */
 .phone-screen {
   position: relative;
   background: #0e1a24;
   border-radius: 30px;
   overflow: hidden;
-  aspect-ratio: 1206 / 2622;
+  aspect-ratio: 1320 / 2868;
   display: block;
   padding: 0;
   line-height: 0;

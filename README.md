@@ -32,7 +32,7 @@ GraceVerseDocs/
 ├── assets/
 │   ├── icon.png
 │   ├── splash-icon.png
-│   └── screenshots/        ← Optional real app screenshots for phone mockups
+│   └── screenshots/        ← App screenshots for phone and Watch mockups
 └── .nojekyll               ← Serves static HTML as-is
 ```
 
@@ -48,6 +48,7 @@ GraceVerseDocs/
 |--------|--------|
 | `assets/screenshots/` | Android (OnePlus) |
 | `assets/screenshots/ios/` | iOS Simulator (iPhone 17 Pro Max, 6.9") |
+| `assets/screenshots/watch/` | Apple Watch Series 11 (46mm) |
 
 Landing page phone frames use the **iOS** captures. Android files remain for Play Console upload.
 
@@ -80,6 +81,14 @@ xcrun simctl io booted screenshot assets/screenshots/ios/today.png
 ```
 
 Screenshots are full-device PNGs. The site scales them inside CSS phone frames.
+
+### Apple Watch capture
+
+| File | Screen |
+|------|--------|
+| `watch/today.png` | Today’s verse in the Watch companion app |
+
+The Watch screenshot is captured at 416×496 on Apple Watch Series 11 (46mm).
 
 ## Google Play Console
 

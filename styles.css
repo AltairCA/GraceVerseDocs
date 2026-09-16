@@ -335,6 +335,34 @@ section {
   margin: 0 auto;
 }
 
+.feature-watch {
+  display: flex;
+  justify-content: center;
+}
+
+.watch {
+  width: 240px;
+  padding: 12px;
+  background: #050a0e;
+  border: 1px solid rgba(243, 239, 230, 0.12);
+  border-radius: 58px;
+  box-shadow: var(--shadow-lg);
+}
+
+.watch-screen {
+  overflow: hidden;
+  aspect-ratio: 416 / 496;
+  border-radius: 47px;
+  background: #0e1a24;
+  line-height: 0;
+}
+
+.watch-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .feature-card {
   background: var(--surface);
   border: 1px solid var(--border);
